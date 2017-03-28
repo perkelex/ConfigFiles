@@ -127,6 +127,7 @@ syntax enable
 set number
 colorscheme 256-jungle 
 set autochdir
+set background=dark
 
 " Set extra options when running in GUI mode
 if has("gui_running")
