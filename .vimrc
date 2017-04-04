@@ -400,3 +400,13 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => User stuff
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let c_no_curly_error=1
+let g:cpp_class_scope_highlight = 1
+let g:cpp_member_variable_highlight = 1
+let g:cpp_experimental_template_highlight = 1
+
