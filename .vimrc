@@ -249,7 +249,8 @@ set viminfo^=%
 set laststatus=2
 
 " Format the status line
-set statusline=%f
+set statusline=%f 
+set statusline+=:%c
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -15,7 +15,10 @@ fi
 # cd
 alias cfiles="cd /var/fpwork/imitrut/CFiles/"
 alias cppfiles="cd /var/fpwork/imitrut/CPPFiles/"
-alias cpptcr="cd /var/fpwork/imitrut/CPPTCR_Examples"
+alias cpptcr="cd /var/fpwork/imitrut/CPPTCR_Examples/"
+alias cppll="cd /var/fpwork/imitrut/CPPLinkedList/"
+alias cv="cd /var/fpwork/cvoicule/Teme/"
+alias im="cd /var/fpwork/imitrut/"
 
 # ls
 alias ll="ls -lah"
@@ -29,13 +32,20 @@ alias cc="compile_C"
 alias ccpp="compile_CPP"
 
 # git
-alias pu="git_push"
+alias pAll="git_push_all"
+alias push="git_pushCCPP"
 
 
 
 # compound commands
-git_push(){
+git_push_all(){
 	git add *;
+	git commit -m "$1";
+	git push;
+}
+
+git_pushCCPP(){
+	git add *.c* *.h*;
 	git commit -m "$1";
 	git push;
 }
